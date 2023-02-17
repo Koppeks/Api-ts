@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nickname": "jorge",
+    "email": "jorge@fakemail.com",
+    "verifiedEmail": true,
+    "password": "1234",
+    "role": "client",
+    "avatar": "https://imgs.search.brave.com/mLwlFyvqROQioiFE-Je_jZz2ip5Kp2jtfcxP8JlU5EM/rs:fit:415:415:1/g:ce/aHR0cDovL3d3dy40/eDQuZWMvb3Zlcmxh/bmRlY3VhZG9yL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L2RlZmF1bHQtdXNl/ci1pY29uLTguanBn"
+  },
+  {
+    "id": 2,
+    "nickname": "pablo",
+    "email": "pablo@fakemail.com",
+    "verifiedEmail": false,
+    "password": "1234",
+    "role": "client",
+    "avatar": "https://imgs.search.brave.com/mLwlFyvqROQioiFE-Je_jZz2ip5Kp2jtfcxP8JlU5EM/rs:fit:415:415:1/g:ce/aHR0cDovL3d3dy40/eDQuZWMvb3Zlcmxh/bmRlY3VhZG9yL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L2RlZmF1bHQtdXNl/ci1pY29uLTguanBn"
+  },
+  {
+    "id": 3,
+    "nickname": "tati",
+    "email": "tati@fakemail.com",
+    "verifiedEmail": true,
+    "password": "1234",
+    "role": "admin",
+    "avatar": "https://imgs.search.brave.com/mLwlFyvqROQioiFE-Je_jZz2ip5Kp2jtfcxP8JlU5EM/rs:fit:415:415:1/g:ce/aHR0cDovL3d3dy40/eDQuZWMvb3Zlcmxh/bmRlY3VhZG9yL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L2RlZmF1bHQtdXNl/ci1pY29uLTguanBn"
+  },
+  {
+    "id": 4,
+    "nickname": "sabrina",
+    "email": "sabri@fakemail.com",
+    "verifiedEmail": true,
+    "password": "1234",
+    "role": "client",
+    "avatar": "https://imgs.search.brave.com/mLwlFyvqROQioiFE-Je_jZz2ip5Kp2jtfcxP8JlU5EM/rs:fit:415:415:1/g:ce/aHR0cDovL3d3dy40/eDQuZWMvb3Zlcmxh/bmRlY3VhZG9yL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L2RlZmF1bHQtdXNl/ci1pY29uLTguanBn"
+  }
+]
