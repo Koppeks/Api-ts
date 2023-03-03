@@ -1,24 +1,31 @@
 import {
   BelongsTo,
+  BelongsToMany,
   Column,
   ForeignKey,
   Model,
   PrimaryKey,
   Table,
+  Unique,
 } from "sequelize-typescript";
-import User from "./UserM";
+import { User } from "./User";
+import { Associations } from "./Associations";
 
 @Table
-export default class Note extends Model {
+export class Note extends Model<Note> {
   @PrimaryKey
   @Column
-  idNote!: number;
+  id!: number;
 
+  @Unique
   @Column
   title!: string;
 
   @Column
   content!: string;
+
+  @BelongsToMany(() => User, () => Associations)
+  users!: User[];
 
   @ForeignKey(() => User)
   @Column

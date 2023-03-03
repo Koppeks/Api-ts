@@ -1,15 +1,14 @@
-import { Column, ForeignKey, Model, Table } from "sequelize-typescript";
-import { UserList } from "../types";
-import List from "./ListM";
-import User from "./UserM";
+import { Table, Column, Model, ForeignKey } from "sequelize-typescript";
+import { User } from "./User";
+import { Note } from "./Note";
 
 @Table
-export default class UserLists extends Model<UserList> {
+export class Associations extends Model<Associations> {
   @ForeignKey(() => User)
   @Column
   userId!: number;
 
-  @ForeignKey(() => List)
+  @ForeignKey(() => Note)
   @Column
-  listId!: number;
+  noteId!: number;
 }
