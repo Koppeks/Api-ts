@@ -7,10 +7,12 @@ import {
   Unique,
   HasMany,
   BelongsToMany,
+  HasOne,
 } from "sequelize-typescript";
 import { Note } from "./Note";
-import { Associations } from "./Associations";
+import { UserList } from "./UserList";
 import { Role } from "../types";
+import Calendar from "./Calendar";
 
 @Table
 export class User extends Model<User> {
@@ -41,6 +43,9 @@ export class User extends Model<User> {
   @HasMany(() => Note)
   notes!: Note[];
 
-  @BelongsToMany(() => User, () => Associations)
+  @HasOne(() => Calendar)
+  calendar!: Calendar;
+
+  @BelongsToMany(() => User, () => UserList)
   users!: User[];
 }

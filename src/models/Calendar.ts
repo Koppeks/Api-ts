@@ -1,5 +1,13 @@
-import { Column, Model, PrimaryKey, Table } from "sequelize-typescript";
+import {
+  BelongsTo,
+  Column,
+  ForeignKey,
+  Model,
+  PrimaryKey,
+  Table,
+} from "sequelize-typescript";
 import { CalendarInter } from "../types";
+import { User } from "./User";
 
 @Table
 export default class Calendar extends Model<CalendarInter> {
@@ -15,4 +23,11 @@ export default class Calendar extends Model<CalendarInter> {
       }
     ];
   };
+
+  @ForeignKey(() => User)
+  @Column
+  authorId!: number;
+
+  @BelongsTo(() => User)
+  author!: User;
 }

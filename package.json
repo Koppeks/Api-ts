@@ -6,10 +6,9 @@
   "scripts": {
     "nodemon": "nodemon index.ts",
     "dev": "ts-node-dev src/index.ts",
-    "test1": "node ./build/index.js",
+    "node": "node ./dist/index.js",
     "lint": "ts-standard",
     "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/index.js"
   },
   "keywords": [],

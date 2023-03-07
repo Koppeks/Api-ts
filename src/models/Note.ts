@@ -1,6 +1,5 @@
 import {
   BelongsTo,
-  BelongsToMany,
   Column,
   ForeignKey,
   Model,
@@ -9,7 +8,6 @@ import {
   Unique,
 } from "sequelize-typescript";
 import { User } from "./User";
-import { Associations } from "./Associations";
 
 @Table
 export class Note extends Model<Note> {
@@ -23,9 +21,6 @@ export class Note extends Model<Note> {
 
   @Column
   content!: string;
-
-  @BelongsToMany(() => User, () => Associations)
-  users!: User[];
 
   @ForeignKey(() => User)
   @Column

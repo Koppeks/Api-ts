@@ -11,13 +11,11 @@ const PORT = 4005;
 app.use("/lists", listsRoute);
 app.use("/users", usersRoute);
 
-db.sync({ alter: true, force: false }).then(() => {
+db.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);
   });
 });
-
-// const { Users } = db.models;
 
 module.exports = {
   ...db.models,
